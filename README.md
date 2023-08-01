@@ -27,7 +27,7 @@ class Search_Result extends StatelessWidget {
               } else if (SearchData["Title"]
                   .toString()
                   .toLowerCase()
-                  .contains(Result.toString().toLowerCase())) {
+                  .startsWith(Result.toString().toLowerCase())) {
                 return ListTile(
                   title: SearchData["Title"],
                   subtitle: SearchData["SubTitle"],
@@ -36,7 +36,7 @@ class Search_Result extends StatelessWidget {
               } else if (SearchData["SubTitle"]
                   .toString()
                   .toLowerCase()
-                  .contains(Result.toString().toLowerCase())) {
+                  .startsWith(Result.toString().toLowerCase())) {
                 return ListTile(
                   title: SearchData["Title"],
                   subtitle: SearchData["SubTitle"],
@@ -45,7 +45,7 @@ class Search_Result extends StatelessWidget {
               } else if (SearchData["search_tag"]
                   .toString()
                   .toLowerCase()
-                  .contains(Result.toString().toLowerCase())) {
+                  .startsWith(Result.toString().toLowerCase())) {
                 return ListTile(
                   title: SearchData["Title"],
                   subtitle: SearchData["SubTitle"],
